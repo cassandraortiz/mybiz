@@ -1,13 +1,21 @@
-var Date = prompt(What is your birthday?);
+
+
+
 var today = new Date();
 var years = today.getFullYear();
-Var findyear = Date.getFullYear();
-Var AgeReq;
+var hourNow = today.getHours();
+var agereq  = prompt('How old are you?');
 
-if ((years-findyear) >=21) {
-    AgeReq = "Good to go!"
+var greeting;
+
+if (agereq >= 21) {20
+    greeting = 'Enjoy your drink!';
+} else if (agereq > 18) {
+    greeting = 'You are not old enough, but do not tell your parents';
+} else if (agereq > 0) {
+    greeting = 'Please do not drink - you are too young.';
 } else {
-    AgeReq = "Not old enough!"
+    greeting = 'Please be responsible.';
 }
 
-document.write("<h1>"+agereq+"</h1>");
+document.write('<h1>' + greeting + '</h1>');

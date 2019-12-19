@@ -3,11 +3,10 @@ body {
     background-color: antiquewhite;
     color: black;
     font-style: normal;
-    opacity: 50%;
 }
 
 header {
-    background-color: purple;
+    background-color:brown;
     border: gold;
     border-width: 10px;
     height: 175px;
@@ -35,11 +34,46 @@ header {
     color: white;
     font-size: 20px;
     float: left;
-    top: 160px;   
-    margin-left: 30px;
+    margin-left: 20px;
+}
+
+nav {
+    background-color: yellow;
+    opacity: 50%;
+    padding-right: 20px;
+    float: left;
+    width: 18%;
+    border-style: double;
+    height: 900px;
+}
+
+
+.recipeTitle {
+    margin-left: 2%;
+}
+
+.recipes {
+    border-style: solid;
+    background-color: #ECCBCB;
+    width: 80%;
+    margin-left: 20%;
+    height: 300px;
 }
 
 .rc_image {
     height: 200px;
     width: 200px;
-}
+    border-style: double;
+    margin-left: 2%;
+    }
+
+
+.directions {
+    float: right;
+    align-items: baseline;
+ }
+
+
+
+
+
