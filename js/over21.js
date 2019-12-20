@@ -12,11 +12,11 @@ if (isNaN(agereq)){
 } else if (agereq > 18) {
     greeting = 'Do your parents know you are trying to drink?';
     under = true;
-} else if (agereq >0) {
+} else if (agereq <18) {
     greeting = 'Please do not drink - you are way too young!';
     under = true;
 } else {
-    while (isNaN(agereq) || agereq === null || agereq.length<1 ) {
+    while (isNaN(agereq) || agereq === null || agereq.length<1) {
         agereq  = prompt('Please enter in your age to continue...');
     }
 }
