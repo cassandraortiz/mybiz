@@ -36,6 +36,8 @@ header {
     margin-left: 20px;
 }
 
+
+
 nav {
     background-color: mistyrose;
     padding-right: 20px;
@@ -43,8 +45,9 @@ nav {
     width: 18%;
     border-style: solid;
     border-color: black;
-    height: 900px;
+    height: fit-content;
 }
+
 
 
 .recipeTitle {

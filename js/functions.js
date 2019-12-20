@@ -25,23 +25,25 @@ function wantToCode() {
         
         var drinks = prompt('Seriously though...How many drinks do you plan to have?');
         var img;
-        var dm; //drunkMonkey ;)
-
-        img = "https://www.bottleyourbrand.com/media/dol/design/1/14886331660112461351648911.png"
-
+        var display = "";
+        var dm;
+           
+        
             while (isNaN(drinks) || drinks === null || drinks.length<1 ) {
                 drinks  = prompt('Please enter a number to continue...');
             }
             
             drinks = Number(drinks);
-            console.log('Gonna drink: '+drinks);
+            console.log('Gonna drink: '+ drinks);
 
-            for(dm=0;dm<=drinks;dm++){
-                dm = dm + img;
+            img = '<img src="https://www.bottleyourbrand.com/media/dol/design/1/14886331660112461351648911.png", width=100px, height=100px>';
+
+
+
+            for(var i= 0; i < drinks; i++){
+                display = display + img;
             }
-
-        
-        return dm;
+            return display;
             
         }
 
