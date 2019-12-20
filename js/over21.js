@@ -17,12 +17,13 @@ if (agereq >= 21) {
 } else if (agereq > 18) {
     greeting = 'Do your parents know you are trying to drink?';
     under = true;
-} else if (agereq > 0) {
+} else if (agereq >0) {
     greeting = 'Please do not drink - you are too young.';
     under = true;
-} else if (agereq === null)
+} else if (agereq === null){
     agereq;
 } else {
+    agereq  = prompt('Please enter in your age to continue...');
     greeting = 'Please be responsible.';
 }
 
@@ -30,5 +31,5 @@ if (agereq >= 21) {
 alert(greeting);
 
 if (under) {
-    window.location.href = "http://127.0.0.1:5500/projects/mybiz/under21.html";
+    window.location.href = "http://127.0.0.1:5500/under21.html";
 }
