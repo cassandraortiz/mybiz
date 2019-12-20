@@ -1,8 +1,23 @@
-body{
-    background-color: black;
-}
+
 
 p{
  color: red; 
  font-size: 72px;  
+}
+
+img{
+    border-style: solid;
+    width: fit-content;
+    
+}
+
+#back{
+    text-decoration: none;
+    font-size: 30px;
+    color: aqua;
+}
+
+body{
+    background-color: rgb(58, 54, 54);
+    align-content: center;
 }

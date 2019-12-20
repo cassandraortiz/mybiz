@@ -1,35 +1,31 @@
 
 'use strict'
 
+var agereq  = prompt('How old are you?');
 var greeting;
 var under;
 
-var agereq  = prompt('How old are you?');
-
-
-while (isNaN(agereq) || agereq === null) {
-    agereq  = prompt('Please enter in your age to continue...');
-}
-
-if (agereq >= 21) {
-    greeting = 'Enjoy your drink!';
+if (isNaN(agereq)){
+    agereq = prompt('Please enter a valid number to continue...')
+} else if (agereq >= 21) {
     under = false;
 } else if (agereq > 18) {
     greeting = 'Do your parents know you are trying to drink?';
     under = true;
 } else if (agereq >0) {
-    greeting = 'Please do not drink - you are too young.';
+    greeting = 'Please do not drink - you are way too young!';
     under = true;
-} else if (agereq === null){
-    agereq;
 } else {
-    agereq  = prompt('Please enter in your age to continue...');
-    greeting = 'Please be responsible.';
+    while (isNaN(agereq) || agereq === null || agereq.length<1 ) {
+        agereq  = prompt('Please enter in your age to continue...');
+    }
 }
 
+console.log('age: '+agereq)
 
-alert(greeting);
 
 if (under) {
-    window.location.href = "http://127.0.0.1:5500/under21.html";
+    alert(greeting);
+    
+    window.location.href = "under21.html";
 }
